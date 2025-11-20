@@ -2,7 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    /*font-family: sans-serif;*/
+}
+
+@font-face {
+    font-family: 'IranianSans';
+    src: url('../fonts/iranianSans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 body {
@@ -11,6 +18,7 @@ body {
     justify-content: center;
     align-items: center;
     background: #f6f6f6;
+    font-family: 'IranianSans';
 }
 
 .container {
@@ -24,14 +32,20 @@ body {
 
 .left-panel {
     width: 40%;
-    background: #1f49c6;
+    background-color: #1f49c6;
+    padding: 30px 20px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
 }
 
 .logo {
-    width: 140px;
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    object-fit: contain;
     opacity: 0.9;
 }
 
@@ -118,4 +132,18 @@ body {
 #date {
     font-size: 15px;
     opacity: 0.95;
+}
+
+
+/* --- متن معرفی دانشگاه --- */
+
+.left-panel .university-description {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 1.9;
+    text-align: center;
+    padding: 0 10px;
+    /*background: rgba(22, 6, 235, 0.75);*/
+    border-radius: 8px;
+    margin-top: 10px;
 }
