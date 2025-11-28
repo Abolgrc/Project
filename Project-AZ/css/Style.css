@@ -109,10 +109,24 @@ body {
     background: #183a9c;
 }
 
-.time-container {
+.time-container-login {
     position: absolute;
     top: 20px;
     right: 20px;
+    background-color: #1e6ffb;
+    padding: 10px 15px;
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    width: 150px;
+}
+
+.time-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
     background-color: #1e6ffb;
     padding: 10px 15px;
     border-radius: 12px;
@@ -132,6 +146,7 @@ body {
 #date {
     font-size: 15px;
     opacity: 0.95;
+    font-weight: bold;
 }
 
 
@@ -201,7 +216,7 @@ body {
     margin-bottom: 10px;
     border-radius: 8px;
     cursor: pointer;
-    transition: 0.2s;
+    transition: 0.4s;
     font-size: 16px;
 }
 
@@ -215,3 +230,54 @@ body {
     font-weight: bold;
 }
 
+
+/* --- Main Content --- */
+
+.main-content {
+    flex: 1;
+    padding: 40px;
+    background-color: #f7f9fc;
+}
+
+.page-title {
+    margin-bottom: 25px;
+}
+
+
+/* Cards */
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+.logout-button {
+    width: 100%;
+    background-color: #1e6ffb;
+    color: white;
+    border: none;
+    padding: 12px 0;
+    font-size: 16px;
+    margin-top: 40px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-family: inherit;
+    transition: 0.4s;
+}
+
+.logout-button:hover {
+    background-color: #fb1e1e;
+}
