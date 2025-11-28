@@ -281,3 +281,15 @@ body {
 .logout-button:hover {
     background-color: #fb1e1e;
 }
+
+.horizontal-divider {
+    position: absolute;
+    top: 110px;
+    left: 70px;
+    right: 350px;
+    width: auto;
+    height: 4px;
+    background: rgb(255, 255, 255);
+    border-radius: 2px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
